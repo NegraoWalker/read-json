@@ -1,11 +1,14 @@
 package org.walker.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.Instant;
 
 public class Lesson {
     private Long id;
     private String title;
     private String media;
+    @JsonProperty("timestamp")
     private Instant timeStamp;
 
     public Lesson() {
